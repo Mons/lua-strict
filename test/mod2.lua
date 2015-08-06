@@ -5,14 +5,14 @@ local r,e = pcall(function()
 end)
 
 if r then
-	print("ok 5 - mod 2 error not called",r)
+	print("ok 6 - mod 2 error not called",r)
 else
-	print("not ok 5 - mod 2 error called: ",e)
+	print("not ok 6 - mod 2 error called: ",e)
 end
 
 
 if GLOBAL1 == 'ok' then
-	print("ok 6 - mod 2 GLOBAL1 accessible")
+	print("ok 7 - mod 2 GLOBAL1 accessible")
 else
-	print("not ok 6 - mod 2 GLOBAL1 accessible")
+	print("not ok 7 - mod 2 GLOBAL1 accessible")
 end

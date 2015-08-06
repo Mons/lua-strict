@@ -57,3 +57,16 @@ end
 		end)()
 	end)()	
 end)()
+
+function test1() end
+
+local r,e = pcall(function()
+	function test() end
+end)
+
+if r then
+	print("ok 5 - mod 1 function creatable",r)
+else
+	print("not ok 5 - mod 1 function not creatable",e)
+end
+

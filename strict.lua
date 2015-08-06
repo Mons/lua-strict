@@ -42,7 +42,7 @@ local function strict(_mode)
 		end;
 		__newindex = function ( t,n,v )
 			local have = rawget(_G,n)
-			if have ~= nil then
+			if have ~= nil or type(v) == 'function' then
 				rawset(_G,n,v)
 				return
 			end
